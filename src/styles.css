@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+.text-secondary { 
+    color: #0FB6CC !important;
+}
+
+.text-primary {
+    color: #542583 !important;
+}
+.btn-primary {
+    background-color: #542583 !important;
+}
+.to-cyan-600 {
+    --tw-gradient-to: #0AB5CB !important;
+}
+.from-sky-800 {
+    --tw-gradient-from: #542582  !important;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(7 89 133 / 0));
+}

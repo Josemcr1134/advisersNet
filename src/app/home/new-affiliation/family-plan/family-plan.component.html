@@ -1,0 +1,752 @@
+<div class="p-5  bg-white rounded-md shadow" style=" margin-bottom: 20px;">
+    <h2 class="text-xl leading-6 font-medium text-gray-900">1er beneficiario</h2>
+    <p class="text-sm mb-3 leading-6 font-normal text-gray-400">Información del segundo familiar</p>
+
+    <div class="bg-white lg:p-0 mt-4   py-5 sm:rounded-lg mb-3">
+        <div class="md:grid md:grid-cols-3 md:gap-6">
+            <div class=" md:mt-0 md:col-span-3">
+                <form action="#" method="POST">
+                    <div class="grid grid-cols-6 gap-6">
+                        <div class="col-span-6 sm:col-span-3">
+                            <label for="first-name" class="block text-sm font-medium text-gray-700">Nombres</label>
+                            <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                        </div>
+
+                        <div class="col-span-6 sm:col-span-3">
+                            <label for="last-name" class="block text-sm font-medium text-gray-700">Apellidos</label>
+                            <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                        </div>
+
+                        <div class="col-span-6 sm:col-span-3">
+                            <label for="type-id" class="block text-sm font-medium text-gray-700">Tipo de identificación </label>
+                            <select id="type-id" name="type-id" autocomplete="type-id" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                                <option>Cédula de ciudadanía</option>
+                               
+                            </select>
+                        </div>
+
+                        <div class="col-span-6 sm:col-span-3">
+                            <label for="id-number" class="block text-sm font-medium text-gray-700">Número de identificación</label>
+                            <select id="id-number" name="id-number" autocomplete="id-number" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                                    <option>United States</option>
+                                    <option>Canada</option>
+                                    <option>Mexico</option>
+                                </select>
+                        </div>
+                        <div class="col-span-6 sm:col-span-3">
+                            <label for="affiliate-email" class="block text-sm font-medium text-gray-700">Correo electrónico</label>
+                            <input type="email" name="affiliate-email" id="affiliate-email" autocomplete="affiliate-email" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                        </div>
+                        <div class="col-span-6 sm:col-span-3">
+                            <label for="phone-number" class="block text-sm font-medium text-gray-700">Celular</label>
+                            <input type="number" name="phone-number" id="phone-number" autocomplete="address-level2" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                        </div>
+
+                        <div class="col-span-6 sm:col-span-3">
+                            <label for="gender" class="block text-sm font-medium text-gray-700">Género</label>
+                            <select id="gender" name="gender" autocomplete="gender" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                                <option>Masculino</option>
+                                <option>Femenino</option>
+                                <option>Otro</option>
+                            </select>
+                        </div>
+                        <div class="col-span-6 sm:col-span-3">
+                            <label for="civi-status" class="block text-sm font-medium text-gray-700">Estado civil</label>
+                            <select id="civi-status" name="civi-status" autocomplete="civi-status" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                                <option>Soltero/a</option>
+                                <option>Casado/a</option>
+                           
+                            </select>
+                        </div>
+                        <div class="col-span-6 sm:col-span-3">
+                            <label for="birthday" class="block text-sm font-medium text-gray-700">Fecha de nacimiento</label>
+                            <input type="date" name="birthday" id="birthday" autocomplete="address-level2" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+
+                        </div>
+                        <div class="col-span-6 sm:col-span-3">
+                            <label for="relationship" class="block text-sm font-medium text-gray-700">Parentesco</label>
+                            <select id="relationship" name="relationship" autocomplete="relationship" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                                <option>Papa/Mama</option>
+                                <option>Hermano/Hermana</option>
+                                <option>Abuelo/Abuela</option>
+                           
+                            </select>
+                        </div>
+
+                        <div class="col-span-6 sm:col-span-6 lg:col-span-2">
+                            <label for="address-user" class="block text-sm font-medium text-gray-700">Dirección de residencia</label>
+                            <input type="text" name="address-user" id="address-user" autocomplete="address-level2" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                        </div>
+
+                        <div class="col-span-6 sm:col-span-3 lg:col-span-2">
+                            <label for="region" class="block text-sm font-medium text-gray-700">Detalles de la dirección</label>
+                            <input type="text" name="address-details-user" id="address-details-user" autocomplete="address-level2" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+
+                        </div>
+
+                        <div class="col-span-6 sm:col-span-3 lg:col-span-2">
+                            <label for="neighborhood" class="block text-sm font-medium text-gray-700">Barrio</label>
+                            <input type="text" name="neighborhood" id="neighborhood" autocomplete="neighborhood" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                        </div>
+                        <div class="col-span-6 sm:col-span-6 lg:col-span-2">
+                            <label for="country" class="block text-sm font-medium text-gray-700">País</label>
+                            <input type="text" name="country" id="country" autocomplete="address-level2" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                        </div>
+
+                        <div class="col-span-6 sm:col-span-3 lg:col-span-2">
+                            <label for="department" class="block text-sm font-medium text-gray-700">Departamento</label>
+                            <input type="text" name="department" id="department" autocomplete="address-level2" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+
+                        </div>
+
+                        <div class="col-span-6 sm:col-span-3 lg:col-span-2">
+                            <label for="city" class="block text-sm font-medium text-gray-700">Ciudad / Municipio</label>
+                            <input type="text" name="city" id="city" autocomplete="city" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                        </div>
+                        <div class="col-span-6 ">
+                            <button type="button" *ngIf="beneficiares === 1" (click)="addBeneficiaries()" class="ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white btn-primary hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                  </svg>
+                                Agregar beneficiario</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div *ngIf="beneficiares > 1" class=" p-5 bg-white rounded-md shadow " style=" margin-bottom: 20px; ">
+    <h2 class="text-xl leading-6 font-medium text-gray-900 ">2do beneficiario</h2>
+    <p class="text-sm mb-3 leading-6 font-normal text-gray-400 ">Información del segundo familiar</p>
+
+    <div class="bg-white lg:p-0 mt-4 py-5 sm:rounded-lg mb-3 ">
+        <div class="md:grid md:grid-cols-3 md:gap-6 ">
+            <div class=" md:mt-0 md:col-span-3 ">
+                <form action="# " method="POST ">
+                    <div class="grid grid-cols-6 gap-6 ">
+                        <div class="col-span-6 sm:col-span-3 ">
+                            <label for="first-name " class="block text-sm font-medium text-gray-700 ">Nombres</label>
+                            <input type="text " name="first-name " id="first-name " autocomplete="given-name " class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md ">
+                        </div>
+
+                        <div class="col-span-6 sm:col-span-3 ">
+                            <label for="last-name " class="block text-sm font-medium text-gray-700 ">Apellidos</label>
+                            <input type="text " name="last-name " id="last-name " autocomplete="family-name " class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md ">
+                        </div>
+
+                        <div class="col-span-6 sm:col-span-3 ">
+                            <label for="type-id " class="block text-sm font-medium text-gray-700 ">Tipo de identificación </label>
+                            <select id="type-id " name="type-id " autocomplete="type-id " class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm ">
+                                <option>Cédula de ciudadanía</option>
+                               
+                            </select>
+                        </div>
+
+                        <div class="col-span-6 sm:col-span-3 ">
+                            <label for="id-number " class="block text-sm font-medium text-gray-700 ">Número de identificación</label>
+                            <select id="id-number " name="id-number " autocomplete="id-number " class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm ">
+                                    <option>United States</option>
+                                    <option>Canada</option>
+                                    <option>Mexico</option>
+                                </select>
+                        </div>
+                        <div class="col-span-6 sm:col-span-3 ">
+                            <label for="affiliate-email " class="block text-sm font-medium text-gray-700 ">Correo electrónico</label>
+                            <input type="email " name="affiliate-email " id="affiliate-email " autocomplete="affiliate-email " class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md ">
+                        </div>
+                        <div class="col-span-6 sm:col-span-3 ">
+                            <label for="phone-number " class="block text-sm font-medium text-gray-700 ">Celular</label>
+                            <input type="number " name="phone-number " id="phone-number " autocomplete="address-level2 " class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md ">
+                        </div>
+
+                        <div class="col-span-6 sm:col-span-3 ">
+                            <label for="gender " class="block text-sm font-medium text-gray-700 ">Género</label>
+                            <select id="gender " name="gender " autocomplete="gender " class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm ">
+                                <option>Masculino</option>
+                                <option>Femenino</option>
+                                <option>Otro</option>
+                            </select>
+                        </div>
+                        <div class="col-span-6 sm:col-span-3 ">
+                            <label for="civi-status " class="block text-sm font-medium text-gray-700 ">Estado civil</label>
+                            <select id="civi-status " name="civi-status " autocomplete="civi-status " class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm ">
+                                <option>Soltero/a</option>
+                                <option>Casado/a</option>
+                           
+                            </select>
+                        </div>
+                        <div class="col-span-6 sm:col-span-3 ">
+                            <label for="birthday " class="block text-sm font-medium text-gray-700 ">Fecha de nacimiento</label>
+                            <input type="date " name="birthday " id="birthday " autocomplete="address-level2 " class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md ">
+
+                        </div>
+                        <div class="col-span-6 sm:col-span-3 ">
+                            <label for="relationship " class="block text-sm font-medium text-gray-700 ">Parentesco</label>
+                            <select id="relationship " name="relationship " autocomplete="relationship " class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500  sm:text-sm ">
+                                <option>Papa/Mama</option>
+                                <option>Hermano/Hermana</option>
+                                <option>Abuelo/Abuela</option>
+                           
+                            </select>
+                        </div>
+
+                        <div class="col-span-6 sm:col-span-6 lg:col-span-2 ">
+                            <label for="address-user " class="block text-sm font-medium text-gray-700 ">Dirección de residencia</label>
+                            <input type="text " name="address-user " id="address-user " autocomplete="address-level2 " class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md ">
+                        </div>
+
+                        <div class="col-span-6 sm:col-span-3 lg:col-span-2 ">
+                            <label for="region " class="block text-sm font-medium text-gray-700 ">Detalles de la dirección</label>
+                            <input type="text " name="address-details-user " id="address-details-user " autocomplete="address-level2 " class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md ">
+
+                        </div>
+
+                        <div class="col-span-6 sm:col-span-3 lg:col-span-2 ">
+                            <label for="neighborhood " class="block text-sm font-medium text-gray-700 ">Barrio</label>
+                            <input type="text " name="neighborhood " id="neighborhood " autocomplete="neighborhood " class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md ">
+                        </div>
+                        <div class="col-span-6 sm:col-span-6 lg:col-span-2 ">
+                            <label for="country " class="block text-sm font-medium text-gray-700 ">País</label>
+                            <input type="text " name="country " id="country " autocomplete="address-level2 " class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md ">
+                        </div>
+
+                        <div class="col-span-6 sm:col-span-3 lg:col-span-2 ">
+                            <label for="department " class="block text-sm font-medium text-gray-700 ">Departamento</label>
+                            <input type="text " name="department " id="department " autocomplete="address-level2 " class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md ">
+
+                        </div>
+
+                        <div class="col-span-6 sm:col-span-3 lg:col-span-2 ">
+                            <label for="city " class="block text-sm font-medium text-gray-700 ">Ciudad / Municipio</label>
+                            <input type="text " name="city " id="city " autocomplete="city " class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md ">
+                        </div>
+                        <div class="col-span-6 ">
+                            <button type="button " *ngIf="beneficiares === 2 " (click)="addBeneficiaries() " class="ml-3 inline-flex justify-center py-2 px-4 border border-transparent sm text-sm font-medium rounded-md text-white btn-primary hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 ">
+                                <svg xmlns="http://www.w3.org/2000/svg " class="h-5 w-5 " fill="none " viewBox="0 0 24 24 " stroke="currentColor " stroke-width="2 ">
+                                    <path stroke-linecap="round " stroke-linejoin="round " d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z " />
+                                  </svg>
+                                Agregar beneficiario</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="flex justify-end ">
+        <button type="button " [routerLink]="[ '/Family/PayMethod'] " routerLinkActive="router-link-active " class="ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white btn-primary hover:bg-indigo-700
+    focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 ">Enviar</button>
+    </div>
+</div>
+<div *ngIf="beneficiares> 2" class="p-5 bg-white rounded-md shadow" style="margin-top: 20px; margin-bottom: 20px;">
+    <h2 class="text-xl leading-6 font-medium text-gray-900">3er beneficiario</h2>
+    <p class="text-sm mb-3 leading-6 font-normal text-gray-400">Información del tercer familiar</p>
+
+    <div class="bg-white lg:p-0 mt-4   py-5 sm:rounded-lg mb-3">
+        <div class="md:grid md:grid-cols-3 md:gap-6">
+            <div class=" md:mt-0 md:col-span-3">
+                <form action="#" method="POST">
+                    <div class="grid grid-cols-6 gap-6">
+                        <div class="col-span-6 sm:col-span-3">
+                            <label for="first-name" class="block text-sm font-medium text-gray-700">Nombres</label>
+                            <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                        </div>
+
+                        <div class="col-span-6 sm:col-span-3">
+                            <label for="last-name" class="block text-sm font-medium text-gray-700">Apellidos</label>
+                            <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                        </div>
+
+                        <div class="col-span-6 sm:col-span-3">
+                            <label for="type-id" class="block text-sm font-medium text-gray-700">Tipo de identificación </label>
+                            <select id="type-id" name="type-id" autocomplete="type-id" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                                <option>Cédula de ciudadanía</option>
+                               
+                            </select>
+                        </div>
+
+                        <div class="col-span-6 sm:col-span-3">
+                            <label for="id-number" class="block text-sm font-medium text-gray-700">Número de identificación</label>
+                            <select id="id-number" name="id-number" autocomplete="id-number" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                                    <option>United States</option>
+                                    <option>Canada</option>
+                                    <option>Mexico</option>
+                                </select>
+                        </div>
+                        <div class="col-span-6 sm:col-span-3">
+                            <label for="affiliate-email" class="block text-sm font-medium text-gray-700">Correo electrónico</label>
+                            <input type="email" name="affiliate-email" id="affiliate-email" autocomplete="affiliate-email" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                        </div>
+                        <div class="col-span-6 sm:col-span-3">
+                            <label for="phone-number" class="block text-sm font-medium text-gray-700">Celular</label>
+                            <input type="number" name="phone-number" id="phone-number" autocomplete="address-level2" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                        </div>
+
+                        <div class="col-span-6 sm:col-span-3">
+                            <label for="gender" class="block text-sm font-medium text-gray-700">Género</label>
+                            <select id="gender" name="gender" autocomplete="gender" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                                <option>Masculino</option>
+                                <option>Femenino</option>
+                                <option>Otro</option>
+                            </select>
+                        </div>
+                        <div class="col-span-6 sm:col-span-3">
+                            <label for="civi-status" class="block text-sm font-medium text-gray-700">Estado civil</label>
+                            <select id="civi-status" name="civi-status" autocomplete="civi-status" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                                <option>Soltero/a</option>
+                                <option>Casado/a</option>
+                           
+                            </select>
+                        </div>
+                        <div class="col-span-6 sm:col-span-3">
+                            <label for="birthday" class="block text-sm font-medium text-gray-700">Fecha de nacimiento</label>
+                            <input type="date" name="birthday" id="birthday" autocomplete="address-level2" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+
+                        </div>
+                        <div class="col-span-6 sm:col-span-3">
+                            <label for="relationship" class="block text-sm font-medium text-gray-700">Parentesco</label>
+                            <select id="relationship" name="relationship" autocomplete="relationship" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                                <option>Papa/Mama</option>
+                                <option>Hermano/Hermana</option>
+                                <option>Abuelo/Abuela</option>
+                           
+                            </select>
+                        </div>
+
+                        <div class="col-span-6 sm:col-span-6 lg:col-span-2">
+                            <label for="address-user" class="block text-sm font-medium text-gray-700">Dirección de residencia</label>
+                            <input type="text" name="address-user" id="address-user" autocomplete="address-level2" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                        </div>
+
+                        <div class="col-span-6 sm:col-span-3 lg:col-span-2">
+                            <label for="region" class="block text-sm font-medium text-gray-700">Detalles de la dirección</label>
+                            <input type="text" name="address-details-user" id="address-details-user" autocomplete="address-level2" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+
+                        </div>
+
+                        <div class="col-span-6 sm:col-span-3 lg:col-span-2">
+                            <label for="neighborhood" class="block text-sm font-medium text-gray-700">Barrio</label>
+                            <input type="text" name="neighborhood" id="neighborhood" autocomplete="neighborhood" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                        </div>
+                        <div class="col-span-6 sm:col-span-6 lg:col-span-2">
+                            <label for="country" class="block text-sm font-medium text-gray-700">País</label>
+                            <input type="text" name="country" id="country" autocomplete="address-level2" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                        </div>
+
+                        <div class="col-span-6 sm:col-span-3 lg:col-span-2">
+                            <label for="department" class="block text-sm font-medium text-gray-700">Departamento</label>
+                            <input type="text" name="department" id="department" autocomplete="address-level2" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+
+                        </div>
+
+                        <div class="col-span-6 sm:col-span-3 lg:col-span-2">
+                            <label for="city" class="block text-sm font-medium text-gray-700">Ciudad / Municipio</label>
+                            <input type="text" name="city" id="city" autocomplete="city" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                        </div>
+                        <div class="col-span-6 ">
+                            <button *ngIf="beneficiares === 3" type="button" (click)="addBeneficiaries()" class="ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white btn-primary hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                  </svg>
+                                Agregar beneficiario</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="flex justify-end">
+        <button type="button" [routerLink]="['/Family/PayMethod']" routerLinkActive="router-link-active" class="ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white btn-primary hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Enviar</button>
+    </div>
+</div>
+<div *ngIf="beneficiares > 3" class="p-5  bg-white rounded-md shadow" style="margin-top: 20px; margin-bottom: 20px;">
+    <h2 class="text-xl leading-6 font-medium text-gray-900">4to beneficiario</h2>
+    <p class="text-sm mb-3 leading-6 font-normal text-gray-400">Información del cuarto familiar</p>
+
+    <div class="bg-white lg:p-0 mt-4   py-5 sm:rounded-lg mb-3">
+        <div class="md:grid md:grid-cols-3 md:gap-6">
+            <div class=" md:mt-0 md:col-span-3">
+                <form action="#" method="POST">
+                    <div class="grid grid-cols-6 gap-6">
+                        <div class="col-span-6 sm:col-span-3">
+                            <label for="first-name" class="block text-sm font-medium text-gray-700">Nombres</label>
+                            <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                        </div>
+
+                        <div class="col-span-6 sm:col-span-3">
+                            <label for="last-name" class="block text-sm font-medium text-gray-700">Apellidos</label>
+                            <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                        </div>
+
+                        <div class="col-span-6 sm:col-span-3">
+                            <label for="type-id" class="block text-sm font-medium text-gray-700">Tipo de identificación </label>
+                            <select id="type-id" name="type-id" autocomplete="type-id" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                                <option>Cédula de ciudadanía</option>
+                               
+                            </select>
+                        </div>
+
+                        <div class="col-span-6 sm:col-span-3">
+                            <label for="id-number" class="block text-sm font-medium text-gray-700">Número de identificación</label>
+                            <select id="id-number" name="id-number" autocomplete="id-number" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                                    <option>United States</option>
+                                    <option>Canada</option>
+                                    <option>Mexico</option>
+                                </select>
+                        </div>
+                        <div class="col-span-6 sm:col-span-3">
+                            <label for="affiliate-email" class="block text-sm font-medium text-gray-700">Correo electrónico</label>
+                            <input type="email" name="affiliate-email" id="affiliate-email" autocomplete="affiliate-email" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                        </div>
+                        <div class="col-span-6 sm:col-span-3">
+                            <label for="phone-number" class="block text-sm font-medium text-gray-700">Celular</label>
+                            <input type="number" name="phone-number" id="phone-number" autocomplete="address-level2" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                        </div>
+
+                        <div class="col-span-6 sm:col-span-3">
+                            <label for="gender" class="block text-sm font-medium text-gray-700">Género</label>
+                            <select id="gender" name="gender" autocomplete="gender" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                                <option>Masculino</option>
+                                <option>Femenino</option>
+                                <option>Otro</option>
+                            </select>
+                        </div>
+                        <div class="col-span-6 sm:col-span-3">
+                            <label for="civi-status" class="block text-sm font-medium text-gray-700">Estado civil</label>
+                            <select id="civi-status" name="civi-status" autocomplete="civi-status" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                                <option>Soltero/a</option>
+                                <option>Casado/a</option>
+                           
+                            </select>
+                        </div>
+                        <div class="col-span-6 sm:col-span-3">
+                            <label for="birthday" class="block text-sm font-medium text-gray-700">Fecha de nacimiento</label>
+                            <input type="date" name="birthday" id="birthday" autocomplete="address-level2" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+
+                        </div>
+                        <div class="col-span-6 sm:col-span-3">
+                            <label for="relationship" class="block text-sm font-medium text-gray-700">Parentesco</label>
+                            <select id="relationship" name="relationship" autocomplete="relationship" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                                <option>Papa/Mama</option>
+                                <option>Hermano/Hermana</option>
+                                <option>Abuelo/Abuela</option>
+                           
+                            </select>
+                        </div>
+
+                        <div class="col-span-6 sm:col-span-6 lg:col-span-2">
+                            <label for="address-user" class="block text-sm font-medium text-gray-700">Dirección de residencia</label>
+                            <input type="text" name="address-user" id="address-user" autocomplete="address-level2" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                        </div>
+
+                        <div class="col-span-6 sm:col-span-3 lg:col-span-2">
+                            <label for="region" class="block text-sm font-medium text-gray-700">Detalles de la dirección</label>
+                            <input type="text" name="address-details-user" id="address-details-user" autocomplete="address-level2" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+
+                        </div>
+
+                        <div class="col-span-6 sm:col-span-3 lg:col-span-2">
+                            <label for="neighborhood" class="block text-sm font-medium text-gray-700">Barrio</label>
+                            <input type="text" name="neighborhood" id="neighborhood" autocomplete="neighborhood" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                        </div>
+                        <div class="col-span-6 sm:col-span-6 lg:col-span-2">
+                            <label for="country" class="block text-sm font-medium text-gray-700">País</label>
+                            <input type="text" name="country" id="country" autocomplete="address-level2" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                        </div>
+
+                        <div class="col-span-6 sm:col-span-3 lg:col-span-2">
+                            <label for="department" class="block text-sm font-medium text-gray-700">Departamento</label>
+                            <input type="text" name="department" id="department" autocomplete="address-level2" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+
+                        </div>
+
+                        <div class="col-span-6 sm:col-span-3 lg:col-span-2">
+                            <label for="city" class="block text-sm font-medium text-gray-700">Ciudad / Municipio</label>
+                            <input type="text" name="city" id="city" autocomplete="city" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                        </div>
+                        <div class="col-span-6 ">
+                            <button *ngIf="beneficiares === 4" type="button" (click)="addBeneficiaries()" class="ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white btn-primary hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                  </svg>
+                                Agregar beneficiario</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="flex justify-end">
+        <button type="button" [routerLink]="['/Family/PayMethod']" routerLinkActive="router-link-active" class="ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white btn-primary hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Enviar</button>
+    </div>
+</div>
+<div *ngIf="beneficiares > 4" class="p-5  bg-white rounded-md shadow" style="margin-top: 20px; margin-bottom: 20px;">
+    <h2 class="text-xl leading-6 font-medium text-gray-900">Quinto beneficiario</h2>
+    <p class="text-sm mb-3 leading-6 font-normal text-gray-400">Información del quinto familiar</p>
+
+    <div class="bg-white lg:p-0 mt-4   py-5 sm:rounded-lg mb-3">
+        <div class="md:grid md:grid-cols-3 md:gap-6">
+            <div class=" md:mt-0 md:col-span-3">
+                <form action="#" method="POST">
+                    <div class="grid grid-cols-6 gap-6">
+                        <div class="col-span-6 sm:col-span-3">
+                            <label for="first-name" class="block text-sm font-medium text-gray-700">Nombres</label>
+                            <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                        </div>
+
+                        <div class="col-span-6 sm:col-span-3">
+                            <label for="last-name" class="block text-sm font-medium text-gray-700">Apellidos</label>
+                            <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                        </div>
+
+                        <div class="col-span-6 sm:col-span-3">
+                            <label for="type-id" class="block text-sm font-medium text-gray-700">Tipo de identificación </label>
+                            <select id="type-id" name="type-id" autocomplete="type-id" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                                <option>Cédula de ciudadanía</option>
+                               
+                            </select>
+                        </div>
+
+                        <div class="col-span-6 sm:col-span-3">
+                            <label for="id-number" class="block text-sm font-medium text-gray-700">Número de identificación</label>
+                            <select id="id-number" name="id-number" autocomplete="id-number" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                                    <option>United States</option>
+                                    <option>Canada</option>
+                                    <option>Mexico</option>
+                                </select>
+                        </div>
+                        <div class="col-span-6 sm:col-span-3">
+                            <label for="affiliate-email" class="block text-sm font-medium text-gray-700">Correo electrónico</label>
+                            <input type="email" name="affiliate-email" id="affiliate-email" autocomplete="affiliate-email" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                        </div>
+                        <div class="col-span-6 sm:col-span-3">
+                            <label for="phone-number" class="block text-sm font-medium text-gray-700">Celular</label>
+                            <input type="number" name="phone-number" id="phone-number" autocomplete="address-level2" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                        </div>
+
+                        <div class="col-span-6 sm:col-span-3">
+                            <label for="gender" class="block text-sm font-medium text-gray-700">Género</label>
+                            <select id="gender" name="gender" autocomplete="gender" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                                <option>Masculino</option>
+                                <option>Femenino</option>
+                                <option>Otro</option>
+                            </select>
+                        </div>
+                        <div class="col-span-6 sm:col-span-3">
+                            <label for="civi-status" class="block text-sm font-medium text-gray-700">Estado civil</label>
+                            <select id="civi-status" name="civi-status" autocomplete="civi-status" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                                <option>Soltero/a</option>
+                                <option>Casado/a</option>
+                           
+                            </select>
+                        </div>
+                        <div class="col-span-6 sm:col-span-3">
+                            <label for="birthday" class="block text-sm font-medium text-gray-700">Fecha de nacimiento</label>
+                            <input type="date" name="birthday" id="birthday" autocomplete="address-level2" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+
+                        </div>
+                        <div class="col-span-6 sm:col-span-3">
+                            <label for="relationship" class="block text-sm font-medium text-gray-700">Parentesco</label>
+                            <select id="relationship" name="relationship" autocomplete="relationship" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                                <option>Papa/Mama</option>
+                                <option>Hermano/Hermana</option>
+                                <option>Abuelo/Abuela</option>
+                           
+                            </select>
+                        </div>
+
+                        <div class="col-span-6 sm:col-span-6 lg:col-span-2">
+                            <label for="address-user" class="block text-sm font-medium text-gray-700">Dirección de residencia</label>
+                            <input type="text" name="address-user" id="address-user" autocomplete="address-level2" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                        </div>
+
+                        <div class="col-span-6 sm:col-span-3 lg:col-span-2">
+                            <label for="region" class="block text-sm font-medium text-gray-700">Detalles de la dirección</label>
+                            <input type="text" name="address-details-user" id="address-details-user" autocomplete="address-level2" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+
+                        </div>
+
+                        <div class="col-span-6 sm:col-span-3 lg:col-span-2">
+                            <label for="neighborhood" class="block text-sm font-medium text-gray-700">Barrio</label>
+                            <input type="text" name="neighborhood" id="neighborhood" autocomplete="neighborhood" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                        </div>
+                        <div class="col-span-6 sm:col-span-6 lg:col-span-2">
+                            <label for="country" class="block text-sm font-medium text-gray-700">País</label>
+                            <input type="text" name="country" id="country" autocomplete="address-level2" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                        </div>
+
+                        <div class="col-span-6 sm:col-span-3 lg:col-span-2">
+                            <label for="department" class="block text-sm font-medium text-gray-700">Departamento</label>
+                            <input type="text" name="department" id="department" autocomplete="address-level2" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+
+                        </div>
+
+                        <div class="col-span-6 sm:col-span-3 lg:col-span-2">
+                            <label for="city" class="block text-sm font-medium text-gray-700">Ciudad / Municipio</label>
+                            <input type="text" name="city" id="city" autocomplete="city" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                        </div>
+                        <div class="col-span-6 ">
+                            <button *ngIf="beneficiares === 5" type="button" (click)="addBeneficiaries()" class="ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white btn-primary hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                  </svg>
+                                Agregar beneficiario</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="flex justify-end">
+        <button type="button" [routerLink]="['/Family/PayMethod']" routerLinkActive="router-link-active" class="ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white btn-primary hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Enviar</button>
+    </div>
+</div>
+<div *ngIf="beneficiares > 5" class="p-5  bg-white rounded-md shadow" style="margin-top: 20px; margin-bottom: 20px;">
+    <h2 class="text-xl leading-6 font-medium text-gray-900">Último beneficiario</h2>
+    <p class="text-sm mb-3 leading-6 font-normal text-gray-400">Información del 6to familiar</p>
+    <!-- This example requires Tailwind CSS v2.0+ -->
+    <div class="rounded-md bg-yellow-50 p-4">
+        <div class="flex">
+            <div class="flex-shrink-0">
+                <!-- Heroicon name: solid/exclamation -->
+                <svg class="h-5 w-5 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+          <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
+        </svg>
+            </div>
+            <div class="ml-3">
+                <h3 class="text-sm font-medium text-yellow-800">Al agregar un 6to integrante al plan familiar, se genera un costo extra al valor </h3>
+                <div class="mt-2 text-sm text-yellow-700">
+                    <p> </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-white lg:p-0 mt-4   py-5 sm:rounded-lg mb-3">
+        <div class="md:grid md:grid-cols-3 md:gap-6">
+            <div class=" md:mt-0 md:col-span-3">
+                <form action="#" method="POST">
+                    <div class="grid grid-cols-6 gap-6">
+                        <div class="col-span-6 sm:col-span-3">
+                            <label for="first-name" class="block text-sm font-medium text-gray-700">Nombres</label>
+                            <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                        </div>
+
+                        <div class="col-span-6 sm:col-span-3">
+                            <label for="last-name" class="block text-sm font-medium text-gray-700">Apellidos</label>
+                            <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                        </div>
+
+                        <div class="col-span-6 sm:col-span-3">
+                            <label for="type-id" class="block text-sm font-medium text-gray-700">Tipo de identificación </label>
+                            <select id="type-id" name="type-id" autocomplete="type-id" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                                <option>Cédula de ciudadanía</option>
+                               
+                            </select>
+                        </div>
+
+                        <div class="col-span-6 sm:col-span-3">
+                            <label for="id-number" class="block text-sm font-medium text-gray-700">Número de identificación</label>
+                            <select id="id-number" name="id-number" autocomplete="id-number" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                                    <option>United States</option>
+                                    <option>Canada</option>
+                                    <option>Mexico</option>
+                                </select>
+                        </div>
+                        <div class="col-span-6 sm:col-span-3">
+                            <label for="affiliate-email" class="block text-sm font-medium text-gray-700">Correo electrónico</label>
+                            <input type="email" name="affiliate-email" id="affiliate-email" autocomplete="affiliate-email" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                        </div>
+                        <div class="col-span-6 sm:col-span-3">
+                            <label for="phone-number" class="block text-sm font-medium text-gray-700">Celular</label>
+                            <input type="number" name="phone-number" id="phone-number" autocomplete="address-level2" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                        </div>
+
+                        <div class="col-span-6 sm:col-span-3">
+                            <label for="gender" class="block text-sm font-medium text-gray-700">Género</label>
+                            <select id="gender" name="gender" autocomplete="gender" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                                <option>Masculino</option>
+                                <option>Femenino</option>
+                                <option>Otro</option>
+                            </select>
+                        </div>
+                        <div class="col-span-6 sm:col-span-3">
+                            <label for="civi-status" class="block text-sm font-medium text-gray-700">Estado civil</label>
+                            <select id="civi-status" name="civi-status" autocomplete="civi-status" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                                <option>Soltero/a</option>
+                                <option>Casado/a</option>
+                           
+                            </select>
+                        </div>
+                        <div class="col-span-6 sm:col-span-3">
+                            <label for="birthday" class="block text-sm font-medium text-gray-700">Fecha de nacimiento</label>
+                            <input type="date" name="birthday" id="birthday" autocomplete="address-level2" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+
+                        </div>
+                        <div class="col-span-6 sm:col-span-3">
+                            <label for="relationship" class="block text-sm font-medium text-gray-700">Parentesco</label>
+                            <select id="relationship" name="relationship" autocomplete="relationship" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                                <option>Papa/Mama</option>
+                                <option>Hermano/Hermana</option>
+                                <option>Abuelo/Abuela</option>
+                           
+                            </select>
+                        </div>
+
+                        <div class="col-span-6 sm:col-span-6 lg:col-span-2">
+                            <label for="address-user" class="block text-sm font-medium text-gray-700">Dirección de residencia</label>
+                            <input type="text" name="address-user" id="address-user" autocomplete="address-level2" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                        </div>
+
+                        <div class="col-span-6 sm:col-span-3 lg:col-span-2">
+                            <label for="region" class="block text-sm font-medium text-gray-700">Detalles de la dirección</label>
+                            <input type="text" name="address-details-user" id="address-details-user" autocomplete="address-level2" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+
+                        </div>
+
+                        <div class="col-span-6 sm:col-span-3 lg:col-span-2">
+                            <label for="neighborhood" class="block text-sm font-medium text-gray-700">Barrio</label>
+                            <input type="text" name="neighborhood" id="neighborhood" autocomplete="neighborhood" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                        </div>
+                        <div class="col-span-6 sm:col-span-6 lg:col-span-2">
+                            <label for="country" class="block text-sm font-medium text-gray-700">País</label>
+                            <input type="text" name="country" id="country" autocomplete="address-level2" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                        </div>
+
+                        <div class="col-span-6 sm:col-span-3 lg:col-span-2">
+                            <label for="department" class="block text-sm font-medium text-gray-700">Departamento</label>
+                            <input type="text" name="department" id="department" autocomplete="address-level2" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+
+                        </div>
+
+                        <div class="col-span-6 sm:col-span-3 lg:col-span-2">
+                            <label for="city" class="block text-sm font-medium text-gray-700">Ciudad / Municipio</label>
+                            <input type="text" name="city" id="city" autocomplete="city" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="flex justify-end">
+        <button type="button" [routerLink]="['/Family/PayMethod']" routerLinkActive="router-link-active" class="ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white btn-primary hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Enviar</button>
+    </div>
+</div>
